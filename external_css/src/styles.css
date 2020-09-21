@@ -1,0 +1,33 @@
+*{ 
+margin: 0; 
+padding: 0;
+box-sizing: border-box;
+background-color: black;
+color:wheat;
+/* this is a google font */
+font-family: 'Josefin Slab', serif;
+
+}
+
+.heading {
+color: #fa9191;
+text-align: center;
+text-transform: capitalize;
+font-weight: bold;
+text-shadow: 0px 2px 4px #ffe9c5;
+margin: 15px 0;
+font-family: "Times New Roman", Times, serif;
+}
+
+.img_div {
+display: flex;
+justify-content: center;
+/* width: 15em; */
+/* height:15em */
+
+}
+
+.img_div img {
+width: 15em;
+height:15em
+}
