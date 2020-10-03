@@ -1,11 +1,12 @@
 import React from 'react';
-import { Route, Switch, NavLink } from 'react-router-dom';
+import { Route, Switch, NavLink, Redirect } from 'react-router-dom';
 import Home from '../src/Component/Home';
 import About from './Component/About';
 import Shop from './Component/Shop';
 import Error from './Component/Error';
 import Shoppinglist from './Component/Shoppinglist';
 import Users from './Component/Users';
+import Search from './Component/Search';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/shop' component={Shop} exact/>
         <Route path='/shop/shoppinglist' component={Shoppinglist} />
         <Route path='/users/:username' component={Users} />
+        <Route path='/search' component={Search} />
         <Route component={Error} />
       </Switch>
     </div>
@@ -30,6 +32,7 @@ function Navbar() {
         <NavLink exact activeClassName="active_class" to="/shop">Shop Now </NavLink>
         <NavLink exact activeClassName="active_class" to="/shop/shoppinglist">Shopping list </NavLink>
         <NavLink exact activeClassName="active_class" to="/users/waiting for input">Users </NavLink>
+        <NavLink exact activeClassName="active_class" to="/search">Search </NavLink>
     </div>
   );
 };
