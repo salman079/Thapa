@@ -7,16 +7,16 @@ const Error = () => {
     // const [i, setI] = useState(0);
 
     // for (i = 0; i < 1000; setI(i++)) { console.log(i) }
-    useEffect(() => {
-        const timeout = setTimeout(() => {<Redirect to="/" />;
-        },10000);
-        return () => clearTimeout(timeout);
-    }, []);
+    // useEffect(() => {
+    //     // const timeout = setTimeout(() => {<Redirect to="/" />;
+    //     },10000);
+    //     return () => clearTimeout(timeout);
+    // }, []);
     return (
         <>
             <p>Ooopsss!!!!!! Error page</p>
             <NavLink exact activeClassName="active_class" to="/">Home </NavLink>
-            
+            <Redirect to="/" />
         </>
     )
 }
