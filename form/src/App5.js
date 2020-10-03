@@ -7,7 +7,7 @@ export default function App5() {
     const [name, setName] = useState();
     const [lname, setLName] = useState();
     const [meal, setMeal] = useState();
-    
+
 
     // const [BioData, setBioData] = useState({
     //     firstname: '',
@@ -37,7 +37,7 @@ export default function App5() {
 
     return (
         <div className="App">
-            First Name: {name} and Last Name: {lname}<br/>
+            First Name: {name} and Last Name: {lname}<br />
             your selected meal is {meal}
             {/* <h2>{`Hello ${BioData.firstname} ${BioData.lastname}`}</h2>
             <h6>{BioData.email} <br />
@@ -70,14 +70,14 @@ export default function App5() {
                 <input
                     type='radio'
                     checked='Lunch'
-                    name = 'meals'
+                    name='meals'
                     onChange={inputvalue}
                 />
                 Lunch
                 <input
                     type='radio'
                     checked='Dinner'
-                    name = 'meals'
+                    name='meals'
                     onChange={inputvalue}
                 />
                 Dinner
