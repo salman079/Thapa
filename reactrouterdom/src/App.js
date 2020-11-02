@@ -9,7 +9,7 @@ import Users from './Component/Users';
 import Search from './Component/Search';
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <div>
       <Switch>
@@ -24,17 +24,3 @@ function App() {
     </div>
   );
 }
-function Navbar() {
-  return (
-    <div className="menu_style">
-        <NavLink exact activeClassName="active_class" to="/">Home </NavLink>
-        <NavLink exact activeClassName="active_class" to="/about">About Us </NavLink>
-        <NavLink exact activeClassName="active_class" to="/shop">Shop Now </NavLink>
-        <NavLink exact activeClassName="active_class" to="/shop/shoppinglist">Shopping list </NavLink>
-        <NavLink exact activeClassName="active_class" to="/users/waiting for input">Users </NavLink>
-        <NavLink exact activeClassName="active_class" to="/search">Search </NavLink>
-    </div>
-  );
-};
-export default App;
-export {Navbar};
